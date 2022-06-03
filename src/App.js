@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import Counter from "./components/Counter";
+import FetchRandomUser from "./components/FetchRandomUser";
 class App extends Component {
   state = {
     visible: true,
@@ -8,19 +9,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className={this.state.visible ? "visible" : "hidden"}>
-          <Counter initialCount={0} />
-        </div>
-        <div>
-          <button
-            onClick={() =>
-              this.setState((state) => ({
-                visible: !state.visible,
-              }))
-            }>
-            Toggle Counter
-          </button>
-        </div>
+        <FetchRandomUser />
       </div>
     );
   }
