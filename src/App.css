@@ -1,3 +1,11 @@
 .App {
   text-align: center;
 }
+
+.visible {
+  background-color: aqua;
+}
+
+.hidden {
+  display: none;
+}
